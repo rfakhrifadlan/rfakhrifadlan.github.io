@@ -60,11 +60,41 @@ nav {
     font-size: 2em;
 }
 
+.pp {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+#imgpp {
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: 2px 5px 7px #00000052;
+}
+
+#radial_big {
+    position: absolute;
+    height: 18%;
+    left: 54%;
+    top: 22%;
+    z-index: 3;
+    opacity: 90%;
+}
+
+#radial_small {
+    position: absolute;
+    height: 8%;
+    left: 50%;
+    top: 22%;
+    opacity: 50%;
+}
+
 #ct {
     position: absolute;
     height: 20%;
     left: -2%;
     top: -5%;
+    opacity: 40%;
 }
 
 #cr {
@@ -93,7 +123,7 @@ nav {
     position: absolute;
     height: 30px;
     top: 40%;
-    /* opacity: 80%; */
+    left: -5%;
 }
 
 #poligon_b {
@@ -101,14 +131,17 @@ nav {
     height: 20%;
     top: 55%;
     left: 20%;
+    opacity: 40%;
+    transform: rotate( 20deg);
 }
 
-#poligon_top {
+
+/* #poligon_top {
     position: absolute;
     height: 15%;
     top: 18%;
     left: 70%;
-}
+} */
 
 @media screen and (max-width: 769px) {
     .landing {
@@ -120,6 +153,18 @@ nav {
         background-position-x: 15%;
         height: 98vh;
     }
+    #imgpp {
+        z-index: 1;
+        border-radius: 50%;
+        width: 45%;
+        box-shadow: 2px 5px 7px #00000052;
+    }
+    #radial_big,
+    #radial_small,
+    #cr {
+        display: none;
+        z-index: 0;
+    }
     #poligon_top {
         position: absolute;
         height: 15%;
@@ -127,12 +172,36 @@ nav {
         left: 70%;
         display: none;
     }
+    #ct {
+        opacity: 50%;
+    }
     #poligon_b {
         position: absolute;
         height: 15%;
         bottom: 0;
         transform: translate(0%, 95%);
         left: 20%;
+        opacity: 10%;
+    }
+    #dots {
+        position: absolute;
+        height: 13%;
+        top: 20%;
+        left: 54%;
+        opacity: 60%;
+    }
+    #xdots {
+        position: absolute;
+        height: 18%;
+        top: 50%;
+        left: 70%;
+        opacity: 20%;
+    }
+    #lines {
+        position: absolute;
+        height: 30px;
+        top: 40%;
+        opacity: 60%;
     }
     .barmenu {
         position: absolute;
@@ -160,6 +229,7 @@ nav {
         overflow-y: hidden;
     }
     .nav-links.open {
+        z-index: 5;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
