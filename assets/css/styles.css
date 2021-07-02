@@ -1,9 +1,9 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 nav {
@@ -119,6 +119,20 @@ nav {
         background-position-y: -50px;
         background-position-x: 15%;
         height: 98vh;
+    }
+    #poligon_top {
+        position: absolute;
+        height: 15%;
+        top: 18%;
+        left: 70%;
+        display: none;
+    }
+    #poligon_b {
+        position: absolute;
+        height: 15%;
+        bottom: 0;
+        transform: translate(0%, 95%);
+        left: 20%;
     }
     .barmenu {
         position: absolute;
