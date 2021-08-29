@@ -10,43 +10,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css?v=1.1">
     <link rel="stylesheet" href="assets/img/icon/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Known Me!</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar-light">
+        <span>BIO</span>
         <div class="barmenu">
             <i class="fas fa-bars"></i>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Project</a></li>
+        <ul class="nav justify-content-center nav-links">
+            <li class="nav-item">
+
+                <a class="nav-link active" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Project</a>
+            </li>
         </ul>
     </nav>
     <div class="wrapper">
         <section class="landing">
+            <div class="bio">
+                <div class="desc">
+                    <p>Hello, My names's</p>
+                    <h1>Rd. Fakhri Fadhlan Dantiano</h1>
+                </div>
+                <div class="dot-slide">
+                    <div class="ds">
+
+                    </div>
+                </div>
+            </div>
             <div class="shortbio">
                 <div class="pp">
                     <img src="assets/img/pp.jpg" id="imgpp" alt="">
+                    <img src="assets/img/bg/bg-box.svg" id="bg-box">
                 </div>
-                <h1>Rd. Fakhri Fadhlan D</h1>
-                <p>S1 Informatika</p>
             </div>
-            <img src="assets/img/bg/radial_big.svg" id="radial_big">
-            <img src="assets/img/bg/radial_big.svg" id="poligon_b">
-            <img src="assets/img/bg/radial_small.svg" id="radial_small">
-            <img src="assets/img/bg/radial_small.svg" id="ct">
+
             <!-- <img src="assets/img/bg/poligon_top.svg" id="poligon_top"> -->
             <img src="assets/img/bg/circle_right.svg" id="cr">
-            <!-- <img src="assets/img/bg/circle_top.svg" id="ct"> -->
+            <img src="assets/img/bg/circle_top.svg" id="ct">
             <img src="assets/img/bg/xdot.svg" id="xdots">
             <img src="assets/img/bg/dots.svg" id="dots">
-            <img src="assets/img/bg/lines.svg" id="lines">
             <!-- <img src="assets/img/bg/poligon_b.svg" id="poligon_b"> -->
         </section>
         <section class="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a nostrum, quasi eveniet magnam consequatur expedita? Magni asperiores delectus deleniti ea quam sequi eveniet quaerat! Aut incidunt pariatur possimus molestiae.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a nostrum, quasi eveniet magnam consequatur expedita? Magni asperiores delectus deleniti ea quam sequi eveniet quaerat! Aut incidunt pariatur possimus molestiae.</p>
+            </div>
         </section>
     </div>
 

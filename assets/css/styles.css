@@ -6,12 +6,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+nav span {
+    display: none;
+}
+
 nav {
-    position: absolute;
-    height: 8vh;
-    background-color: #ffffff;
-    z-index: 2;
+    position: fixed;
+    margin-top: 1em;
     width: 100%;
+    z-index: 999;
+    background-color: transparent !important;
 }
 
 .barmenu {
@@ -20,20 +24,24 @@ nav {
 }
 
 .nav-links {
+    background-color: transparent;
     margin: 0;
     padding: 0;
     font-weight: 500;
     height: 100%;
-    display: flex;
-    list-style: none;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-links li a {
-    color: #0053be;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1em;
+}
+
+.nav-item {
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .landing {
@@ -42,33 +50,47 @@ nav {
     background: url('../img/bg/bg.svg') no-repeat;
     background-size: cover;
     background-position-y: -50px;
-    height: 98vh;
+    height: 100vh;
+}
+
+.bio {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    margin-left: 3%;
+    width: 100%;
+    z-index: 111;
+}
+
+.bio p {
+    text-align: left;
 }
 
 .shortbio {
     height: 100%;
     display: flex;
-    z-index: 1;
     flex-direction: column;
-    color: white;
     justify-content: center;
     align-items: center;
 }
 
-.shortbio h1 {
-    font-weight: 500;
-    font-size: 2em;
-}
-
 .pp {
+    transform: translate(-10%, -10%);
     display: flex;
-    justify-content: center;
     z-index: 1;
 }
 
+.description {
+    height: 100vh;
+}
+
 #imgpp {
+    transform: translate(36%, 30%);
     border-radius: 50%;
-    width: 20%;
+    height: 250px;
+    width: 250px;
     box-shadow: 2px 5px 7px #00000052;
 }
 
@@ -92,9 +114,9 @@ nav {
 #ct {
     position: absolute;
     height: 20%;
-    left: -2%;
     top: -5%;
-    opacity: 40%;
+    left: -4%;
+    /* opacity: 40%; */
 }
 
 #cr {
@@ -104,18 +126,23 @@ nav {
     top: 15%;
 }
 
+#bg-box {
+    /* position: absolute; */
+    height: 400px;
+}
+
 #dots {
     position: absolute;
-    height: 18%;
-    top: 10%;
-    left: 25%;
+    height: 40%;
+    top: 25%;
+    left: 10%;
 }
 
 #xdots {
     position: absolute;
     height: 18%;
-    top: 50%;
-    left: 70%;
+    top: 40%;
+    left: 75%;
     opacity: 50%;
 }
 
@@ -159,6 +186,7 @@ nav {
         width: 45%;
         box-shadow: 2px 5px 7px #00000052;
     }
+    .nav-links li i,
     #radial_big,
     #radial_small,
     #cr {
@@ -203,6 +231,23 @@ nav {
         top: 40%;
         opacity: 60%;
     }
+    nav {
+        display: flex;
+        position: absolute;
+        height: 6vh;
+        background: #ffffff !important;
+        z-index: 2;
+        width: 100%;
+    }
+    nav span {
+        display: block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 1.5em;
+        font-weight: bold;
+        color: #0053be;
+    }
     .barmenu {
         position: absolute;
         z-index: 10;
@@ -225,6 +270,10 @@ nav {
         transition: all 1s ease-out;
         pointer-events: none;
     }
+    .nav-item {
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
     body.open {
         overflow-y: hidden;
     }
@@ -239,6 +288,7 @@ nav {
     }
     .nav-links li a {
         font-size: 25px;
+        color: #0053be;
     }
     .nav-links li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
