@@ -35,5 +35,24 @@ $(document).ready(function() {
 
     });
 
+    $(this).on('mouseover', '.pick-side', function() {
+        // $('.pick-side').hover(
+        $('.main-pick').removeClass('main-pick').addClass('pick-side')
+        $(this).removeClass('pick-side').addClass('main-pick')
+            // function() {
+            //     $('.main-pick').removeClass('main-pick').addClass('pick-side')
+            //     $(this).removeClass('pick-side').addClass('main-pick')
+            // }
+            // function() {
+            //     $('#main-pick').removeClass('pick-side').addClass('main-pick')
+            //     $(this).removeClass('main-pick').addClass('pick-side')
+            // }
+            // )
+
+        // $(this).on('click', '.pick-side', function() {
+
+        //     })
+    })
+
     // var iconButton = $("#dot2");
 });
