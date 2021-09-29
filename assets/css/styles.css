@@ -13,10 +13,17 @@ nav span {
 
 nav {
     position: fixed;
-    margin-top: 1em;
     width: 100%;
+    height: 60px;
     z-index: 999;
-    background-color: transparent !important;
+    background-color: transparent;
+    color: #fff;
+}
+
+nav.scroll-nav {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 2px 20px 0px #5c5c5c61;
 }
 
 .barmenu {
@@ -35,7 +42,6 @@ nav {
 }
 
 .nav-links li a {
-    color: #ffffff;
     text-decoration: none;
     font-size: 1em;
 }
@@ -152,6 +158,7 @@ nav {
 }
 
 .headinfo h3 {
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -223,14 +230,135 @@ nav {
     height: 250px;
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: -1px -1px 12px 0px rgb(0 0 0 / 7%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0px 9px 10px rgb(0 0 0 / 5%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0px 20px 33.4px rgb(0 0 0 / 4%), 0 100px 80px rgb(0 0 0 / 2%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .box-info {
     padding: 40px;
     width: 45%;
     border-radius: 30px;
-    box-shadow: -1px -1px 12px 0px rgb(0 0 0 / 7%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0px 9px 10px rgb(0 0 0 / 5%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0px 20px 33.4px rgb(0 0 0 / 4%), 0 100px 80px rgb(0 0 0 / 2%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.skill-info {
+    height: 130vh;
+    padding: 5% 0px 5% 0px;
+    background-color: #1F56C0;
+}
+
+.headskill {
+    color: #fff;
+    text-align: center;
+}
+
+.headskill h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.list-skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-skill {
+    padding: 10px 40px 10px 40px;
+    color: #000;
+    font-weight: 700;
+    height: 60px;
+    width: 60%;
+    background-color: #fff;
+    margin-top: 2em;
+    justify-content: space-between;
+    border-radius: 40px;
+}
+
+.catalog {
+    width: 140px;
+}
+
+.bar-percent {
+    width: 60%;
+    background-color: #CCCCCC;
+    height: 20px;
+    border-radius: 30px;
+}
+
+.percent {
+    background-color: #519CFF;
+    height: 20px;
+    border-radius: 30px;
+}
+
+.project>.container {
+    padding: 40px 0 40px 0;
+}
+
+.col-md-3 {
+    padding: 20px;
+    margin: 25px;
+    min-height: 200;
+}
+
+.img-alt img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border-radius: 30px;
+}
+
+.find-more {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    border-radius: 30px !important;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.find-more:hover {
+    text-decoration: none !important;
+}
+
+.symbol {
+    margin-left: 0.5em;
+}
+
+.footer {
+    height: 30vh;
+    padding: 40px 0 40px 0;
+    background-color: #01256B;
+}
+
+.content-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed a {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 20px 0 20px;
+}
+
+.sosmed a:hover {
+    color: #519CFF;
+}
+
+.foot-note p {
+    text-align: center;
+    color: #fff;
 }
 
 #imgpp {
@@ -249,6 +377,10 @@ nav {
     top: 22%;
     z-index: 3;
     opacity: 90%;
+}
+
+#navbar {
+    transition: top 0.3s;
 }
 
 #radial_small {
@@ -331,6 +463,7 @@ nav {
     background-color: #144DB6;
     position: absolute;
     z-index: -1;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 769px) {
