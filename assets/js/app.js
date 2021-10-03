@@ -22,6 +22,11 @@ if (window.innerWidth > 1000) {
         });
     }
 }
+if ($('body').hasClass('open')) {
+    $('html').addClass("fixed-position");
+} else {
+    $('html').removeClass("fixed-position");
+}
 // window.onscroll = function() { scrollFunction() };
 
 // function scrollFunction() {

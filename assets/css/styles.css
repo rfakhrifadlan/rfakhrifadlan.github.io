@@ -648,9 +648,9 @@ nav.scroll-nav {
         display: flex;
         margin: 0;
         position: absolute;
-        height: 6vh;
+        height: 8vh;
         background: #ffffff !important;
-        z-index: 2;
+        z-index: 999;
         width: 100%;
     }
     nav span {
@@ -690,6 +690,7 @@ nav.scroll-nav {
     }
     body.open {
         overflow: hidden;
+        position: fixed;
     }
     .nav-links.open {
         z-index: 5;
@@ -718,6 +719,7 @@ nav.scroll-nav {
     }
     /* Contact */
     .card-box-contain {
-        width: 400px;
+        width: 330px;
+        padding: 2em;
     }
 }
