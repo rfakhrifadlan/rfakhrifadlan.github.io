@@ -3,20 +3,24 @@ const barmenu = document.querySelector('.barmenu');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.nav-links li');
 AOS.init();
-if ($('.smart-scroll').length > 0) { // check if element exists
-    var last_scroll_top = 0;
-    $(window).on('scroll', function() {
-        scroll_top = $(this).scrollTop();
-        if (scroll_top < 10) {
-            console.log('paling ujung')
-        } else if (scroll_top < last_scroll_top) {
-            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+if (window.innerWidth > 1000) {
+    if ($('.smart-scroll').length > 0) { // check if element exists
+        var last_scroll_top = 0;
+        $(window).on('scroll', function() {
+            scroll_top = $(this).scrollTop();
+            if (scroll_top < 1) {
+                $('.smart-scroll').removeClass('scrolled-up');
+                $('.nav-links').find('li a').css('color', '#ffffff');
+            } else if (scroll_top > last_scroll_top) {
+                $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+                $('.nav-links').find('li a').css('color', '#0053be');
 
-        } else {
-            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-        }
-        last_scroll_top = scroll_top;
-    });
+            } else {
+                $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+            }
+            last_scroll_top = scroll_top;
+        });
+    }
 }
 // window.onscroll = function() { scrollFunction() };
 

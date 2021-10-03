@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar-light" id="navbar">
+    <nav class="smart-scroll navbar-light" id="navbar">
         <span>FakhriFD</span>
         <div class="barmenu">
             <i class="fas fa-bars"></i>
@@ -24,10 +24,10 @@
         <ul class="nav justify-content-center nav-links">
             <li class="nav-item">
 
-                <a class="nav-link active" id="nav-link" href="#">Beranda</a>
+                <a class="nav-link active" id="nav-link" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="nav-link" href="#">Contact</a>
+                <a class="nav-link" id="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="nav-link" href="#">Project</a>
@@ -38,15 +38,30 @@
         <section class="contact">
             <div class="container">
                 <div class="card-box">
-                    <div class="head-contact">
-                        <h4>Contact Me</h4>
-                    </div>
-                    <div class="card-body-box">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+
+                    <div class="card-box-contain">
+                        <div class="row">
+                            <div class="head-contact">
+                                <h4>CONTACT ME</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md card-col">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nama" placeholder="Nama">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Subjek" placeholder="Subjek">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="isi" rows="5" placeholder="Isi pesan"></textarea>
+                                </div>
+                                <a href="" class="btn btn-primary w-100 send">Kirim</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
