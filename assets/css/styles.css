@@ -895,14 +895,47 @@ nav.scroll-nav {
     }
     .edu-img {
         width: 100%;
-        height: 200px;
+        height: 150px;
     }
     .paragraf-info p {
         text-align: left;
+    }
+    /* SKILL INFO */
+    .skill-info {
+        padding: 4em 0px 4em 0px;
+        background: linear-gradient(0deg, rgba(0, 59, 172, 1) 0%, rgba(0, 59, 172, 1) 0%, rgba(51, 102, 198, 1) 100%);
+    }
+    .skill-info .container {
+        padding: 0 20px 0 20px;
+    }
+    .box-skill {
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+    }
+    .bar-percent {
+        width: 40%;
+    }
+    .catalog {
+        font-size: 15px;
+    }
+    /* PROJECT */
+    .project {
+        padding: 4em 0px 4em 0px;
+        background-color: #f3f3f3;
+    }
+    .img-col-pro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    .img-alt img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     /* Contact */
     .card-box-contain {
         width: 330px;
         padding: 2em;
     }
+    .
 }
