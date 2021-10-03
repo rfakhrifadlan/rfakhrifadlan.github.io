@@ -3,25 +3,48 @@ const barmenu = document.querySelector('.barmenu');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.nav-links li');
 AOS.init();
+if ($('.smart-scroll').length > 0) { // check if element exists
+    var last_scroll_top = 0;
+    $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();
+        if (scroll_top < 10) {
+            console.log('paling ujung')
+        } else if (scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (currentScrollPos == 0) {
-            $('.nav-links>li>a').css('color', '#000')
         } else {
-            if (prevScrollpos > currentScrollPos) {
-                $('#navbar').addClass('scroll-nav');
-            } else {
-                $("#navbar").css('top', '-70px');
-            }
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
         }
+        last_scroll_top = scroll_top;
+    });
+}
+// window.onscroll = function() { scrollFunction() };
 
-        prevScrollpos = currentScrollPos;
-    }
-    // $(windows).scroll(function() {
-    //     $('navbar').toggleClass('scroll-nav', $(this).scrollTop() > 50)
-    // });
+// function scrollFunction() {
+//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//         document.getElementById("navbar").style.cssText = "background-color:#fff;";
+//         document.getElementsByClassName("nav-link").style.cssText = "color:#0053be;";
+//         document.getElementById("logo").style.fontSize = "25px";
+//     } else {
+//         document.getElementById("navbar").style.cssText = "background-color:transparent;";
+//         document.getElementById("logo").style.fontSize = "35px";
+//     }
+// }
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//     var currentScrollPos = window.pageYOffset;
+//     if (currentScrollPos == 0) {
+//         $('.nav-links>li>a').css('color', '#000')
+//     } else {
+//         if (prevScrollpos > currentScrollPos) {
+//             $('#navbar').addClass('scroll-nav');
+//         } else {
+//             $("#navbar").css('top', '-70px');
+//         }
+//     }
+
+//     prevScrollpos = currentScrollPos;
+// }
 
 barmenu.addEventListener('click', () => {
     navLinks.classList.toggle('open');
