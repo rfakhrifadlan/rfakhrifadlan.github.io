@@ -887,18 +887,6 @@ nav.scroll-nav {
     .top-line {
         padding: 0 5% 0 5%;
     }
-    .scrolling-wrapper:after {
-        content: "";
-        position: absolute;
-        z-index: 9999;
-        bottom: 0;
-        left: 0;
-        pointer-events: none;
-        background-color: red;
-        /* background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%); */
-        height: 100%;
-        width: 100%;
-    }
     .card-timeline {
         padding: 0 5% 0 5%;
         width: 100%;
