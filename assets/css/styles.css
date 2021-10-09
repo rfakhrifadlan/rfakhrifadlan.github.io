@@ -797,9 +797,10 @@ nav.scroll-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 5% 0 5%;
     }
     .desc-top {
-        width: 350px;
+        width: 100%;
         height: 100px;
         background-color: #ffffff;
         border-radius: 15px;
@@ -828,7 +829,7 @@ nav.scroll-nav {
     }
     .desc-bottom {
         margin-top: 2em;
-        width: 350px;
+        width: 100%;
         height: 250px;
         background-color: #ffffff;
         border-radius: 15px;
@@ -838,11 +839,23 @@ nav.scroll-nav {
         padding: 35px;
     }
     .scrolling-wrapper {
+        position: relative;
         margin-top: 1em;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
     }
+    /* .scroll-line:before {
+        content: '';
+        z-index: 11;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to left, transparent 150px, white);
+        pointer-events: none;
+    } */
     .scroll-line .col {
         display: flex;
         align-items: center;
