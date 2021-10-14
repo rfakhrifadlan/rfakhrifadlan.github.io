@@ -972,6 +972,10 @@ nav.scroll-nav {
         padding: 4em 0px 4em 0px;
         background-color: #f3f3f3;
     }
+    .row-project {
+        margin-left: 1em !important;
+        margin-right: 1em !important;
+    }
     .img-col-pro {
         display: flex;
         align-items: center;
