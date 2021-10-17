@@ -12,19 +12,18 @@ body {
 
 .loader {
     /* position: fixed; */
-    z-index: 999;
+    z-index: 9999;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background-color: #16191e;
-    position: absolute;
+    background-color: #2568CE;
+    position: fixed;
 }
 
 .loader>div {
     height: 100px;
     width: 100px;
-    border: 15px solid #45474b;
-    border-top-color: #2a88e6;
+    border: 15px solid #5397ff;
+    border-top-color: #ffffff;
     position: absolute;
     margin: auto;
     top: 0;
@@ -118,7 +117,7 @@ nav.scroll-nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 30%;
+    top: 32%;
     margin-left: 5%;
     width: 100%;
     z-index: 111;
@@ -552,6 +551,13 @@ nav.scroll-nav {
     height: 50%;
     right: 0;
     top: 15%;
+}
+
+#cr2 {
+    position: absolute;
+    height: 50%;
+    right: 0;
+    top: 5%;
 }
 
 #bg-box {

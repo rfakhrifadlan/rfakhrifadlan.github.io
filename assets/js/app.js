@@ -3,6 +3,7 @@ const barmenu = document.querySelector('.barmenu');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.nav-links li');
 AOS.init();
+
 if (window.innerWidth > 1000) {
     if ($('.smart-scroll').length > 0) { // check if element exists
         var last_scroll_top = 0;
@@ -22,39 +23,6 @@ if (window.innerWidth > 1000) {
         });
     }
 }
-if ($('body').hasClass('open')) {
-    $('html').addClass("fixed-position");
-} else {
-    $('html').removeClass("fixed-position");
-}
-// window.onscroll = function() { scrollFunction() };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//         document.getElementById("navbar").style.cssText = "background-color:#fff;";
-//         document.getElementsByClassName("nav-link").style.cssText = "color:#0053be;";
-//         document.getElementById("logo").style.fontSize = "25px";
-//     } else {
-//         document.getElementById("navbar").style.cssText = "background-color:transparent;";
-//         document.getElementById("logo").style.fontSize = "35px";
-//     }
-// }
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     if (currentScrollPos == 0) {
-//         $('.nav-links>li>a').css('color', '#000')
-//     } else {
-//         if (prevScrollpos > currentScrollPos) {
-//             $('#navbar').addClass('scroll-nav');
-//         } else {
-//             $("#navbar").css('top', '-70px');
-//         }
-//     }
-
-//     prevScrollpos = currentScrollPos;
-// }
-
 barmenu.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     body.classList.toggle('open');
@@ -62,6 +30,16 @@ barmenu.addEventListener('click', () => {
     links.forEach(link => {
         link.classList.toggle('fade');
     });
+});
+
+if ($('body').hasClass('open')) {
+    $('html').addClass("fixed-position");
+} else {
+    $('html').removeClass("fixed-position");
+}
+
+$(window).on('load', function() {
+    $('.loader').fadeOut(800);
 });
 
 $(document).ready(function() {
