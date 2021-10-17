@@ -695,6 +695,7 @@ nav.scroll-nav {
     }
     .thumb {
         height: 100%;
+        width: 100%;
         display: flex;
         margin-left: 1em;
         padding: 5px;
@@ -709,6 +710,8 @@ nav.scroll-nav {
         color: #0053be;
     }
     nav .thumb img {
+        height: 100%;
+        width: auto;
         display: block;
     }
     .barmenu {
