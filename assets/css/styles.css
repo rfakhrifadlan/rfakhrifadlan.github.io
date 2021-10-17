@@ -43,7 +43,11 @@ body {
 
 /* ================================================ */
 
-nav span {
+nav .thumb span {
+    display: none;
+}
+
+nav .thumb img {
     display: none;
 }
 
@@ -689,14 +693,23 @@ nav.scroll-nav {
         z-index: 999;
         width: 100%;
     }
-    nav span {
+    .thumb {
+        height: 100%;
+        display: flex;
+        margin-left: 1em;
+        padding: 5px;
+        text-decoration: none;
+    }
+    nav .thumb span {
         display: block;
         height: 100%;
         display: flex;
         align-items: center;
-        margin-left: 1.5em;
         font-weight: bold;
         color: #0053be;
+    }
+    nav .thumb img {
+        display: block;
     }
     .barmenu {
         position: absolute;
