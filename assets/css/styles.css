@@ -711,7 +711,6 @@ nav.scroll-nav {
     }
     nav .thumb img {
         height: 100%;
-        width: auto;
         display: content;
     }
     .barmenu {
