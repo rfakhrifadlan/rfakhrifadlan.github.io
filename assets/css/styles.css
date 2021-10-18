@@ -939,14 +939,13 @@ nav.scroll-nav {
         background-color: #f3f3f3;
         padding: 15% 0 15% 0;
     }
+    .eduinfo .container{
+        padding: 0 5% 0 5%;
+    }
     .desc-timeline {
         margin-top: 2em;
     }
-    .top-line {
-        padding: 0 5% 0 5%;
-    }
     .card-timeline {
-        padding: 0 5% 0 5%;
         width: 100%;
         flex-direction: column;
     }
@@ -978,7 +977,7 @@ nav.scroll-nav {
         background: linear-gradient(0deg, rgba(0, 59, 172, 1) 0%, rgba(0, 59, 172, 1) 0%, rgba(51, 102, 198, 1) 100%);
     }
     .skill-info .container {
-        padding: 0 20px 0 20px;
+        padding: 0 5% 0 5%;
     }
     .box-skill {
         width: 100%;
