@@ -960,7 +960,7 @@ nav.scroll-nav {
     }
     .box-info {
         width: 100%;
-        background: #ffffff;
+        background: #ffffff !important;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         margin-top: 2em;
     }
