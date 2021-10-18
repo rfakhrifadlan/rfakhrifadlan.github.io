@@ -285,6 +285,7 @@ nav.scroll-nav {
 .box-info {
     padding: 40px;
     width: 45%;
+    background: #ffffff;
     border-radius: 30px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
@@ -960,7 +961,7 @@ nav.scroll-nav {
     }
     .box-info {
         width: 100%;
-        background: #ffffff !important;
+        background: #ffffff;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         margin-top: 2em;
     }
